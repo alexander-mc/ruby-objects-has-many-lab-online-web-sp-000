@@ -28,32 +28,32 @@ end
 
 
 
-class Song
+# class Song
   
-  attr_accessor :artist, :name
+#   attr_accessor :artist, :name
   
-  @@all = []
+#   @@all = []
   
-  def initialize(name)
-    @name = name
-    @@all << self
-  end
+#   def initialize(name)
+#     @name = name
+#     @@all << self
+#   end
   
-  def self.all
-    @@all
-  end
+#   def self.all
+#     @@all
+#   end
   
-  def artist_name
-    self.artist ? self.artist.name : nil
-  end
+#   def artist_name
+#     self.artist ? self.artist.name : nil
+#   end
   
-end
+# end
 
-lil_nas_x = Artist.new("Lil Nas X")
-old_town_road = Song.new("Old Town Road")
-hello = Song.new("Hello")
-old_town_road.artist = lil_nas_x
+# lil_nas_x = Artist.new("Lil Nas X")
+# old_town_road = Song.new("Old Town Road")
+# hello = Song.new("Hello")
+# old_town_road.artist = lil_nas_x
 
-lil_nas_x.add_song_by_name("another song")
+# lil_nas_x.add_song_by_name("another song")
 
-puts hello.artist_name
+# puts hello.artist_name
